@@ -6,14 +6,16 @@ namespace ConsoleApplication2
     internal class FibonacciLookup
     {
         
-        private const int InitSize=50;
+        private const int InitSize=20;
         private static long[] _table;
         public static void Main(string[] args)
         {
             _table=new long[InitSize];
+
+            int testNum = 42;
             
-            Console.WriteLine("{0}",Fibonacci(40));
-            Console.WriteLine("{0}",StandardFibonacci(40));
+            Console.WriteLine("Optimized Fibonacci function's result: {0} (faster)",Fibonacci(testNum));
+            Console.WriteLine("Old Fibonacci function's result: {0} (slower)",StandardFibonacci(testNum));
             
         }
 
