@@ -1,9 +1,7 @@
 ﻿using System;
 using System.Diagnostics;
 
-namespace ConsoleApplication2
-{
-    internal class FibonacciLookup
+    public class FibonacciLookup
     {
         
         private const int InitSize=20;
@@ -66,4 +64,3 @@ namespace ConsoleApplication2
         }
         
     }
-}
